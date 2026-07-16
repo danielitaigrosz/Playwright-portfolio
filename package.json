@@ -1,0 +1,27 @@
+{
+  "name": "playwright-automation-portfolio",
+  "version": "1.0.0",
+  "description": "Portfólio de automação de testes E2E com Playwright + JavaScript, usando Page Object Model, aplicado no site SauceDemo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:chromium": "npx playwright test --project=chromium",
+    "test:debug": "npx playwright test --debug",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "javascript",
+    "automation",
+    "qa",
+    "e2e-testing",
+    "page-object-model"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.47.0"
+  }
+}
