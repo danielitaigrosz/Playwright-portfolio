@@ -1,5 +1,7 @@
 # 🎭 Playwright Automation Portfolio
 
+![Playwright Tests](https://github.com/danielitaigrosz/playwright-portfolio/actions/workflows/playwright.yml/badge.svg)
+
 Projeto de automação de testes E2E (end-to-end) construído com **Playwright + JavaScript**, utilizando o padrão **Page Object Model (POM)**. Criado como portfólio de estudos em QA/automação, aplicado sobre o site de testes público [SauceDemo](https://www.saucedemo.com/).
 
 ## 🧰 Tecnologias
@@ -92,6 +94,14 @@ Os testes utilizam o [SauceDemo](https://www.saucedemo.com/), um site oficialmen
 ## 🙋 Sobre este projeto
 
 Este repositório foi criado como parte dos meus estudos em automação de testes com Playwright. Sinta-se à vontade para explorar, sugerir melhorias ou usar como referência para seus próprios estudos.
+
+## 🙋 Sobre mim
+
+Meu nome é Daniel Itai Grosz, e estou estudando automação de testes com Playwright. Esse é um dos meus projetos de portfólio!
+
+- 💼 [LinkedIn] -> https://www.linkedin.com/in/daniel-itai-grosz/
+- 🐙 [GitHub](https://github.com/danielitaigrosz)
+- ✉️ [Email] daniel.itaigrosz@gmail.com
 
 ---
 Feito com 🎭 Playwright + JavaScript
