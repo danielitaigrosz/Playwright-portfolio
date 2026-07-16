@@ -1,3 +1,31 @@
+// tests/checkout.spec.js ATUALIZADO
+const { test, expect } = require('@playwright/test');
+const { CheckoutFlow } = require('../workflow/CheckoutFlow');
+const users = require('../utils/users');
+
+test.describe('Fluxo de checkout', () => {
+  test('deve concluir uma compra do início ao fim', async ({ page }) => {
+    const checkoutFlow = new CheckoutFlow(page);
+
+    // Passo composto: login + adicionar produto + ir pro carrinho + iniciar checkout
+    await checkoutFlow.comprarProduto(
+      users.standardUser.username,
+      users.standardUser.password,
+      'Sauce Labs Backpack'
+    );
+
+    // Passos específicos DESSE teste
+    await checkoutFlow.checkoutPage.fillPersonalInfo('João', 'Silva', '80000-000');
+    await checkoutFlow.checkoutPage.finishCheckout();
+
+    const successMessage = await checkoutFlow.checkoutPage.getSuccessMessage();
+    expect(successMessage).toBe('Thank you for your order!');
+  });
+});
+
+
+
+/* CHECKOUT.SPEC.JS ANTIGO
 // tests/checkout.spec.js
 const { test, expect } = require('@playwright/test');
 const { LoginPage } = require('../pages/LoginPage');
@@ -33,3 +61,4 @@ test.describe('Fluxo de checkout', () => {
     expect(successMessage).toBe('Thank you for your order!');
   });
 });
+*/

@@ -35,18 +35,20 @@ module.exports = defineConfig({
   },
 
   // Projetos para rodar os testes em diferentes navegadores
+  // TODO: reativar firefox e webkit antes de finalizar o portfólio
+
   projects: [
     {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
-    },
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+    }//,
+    //{
+    //  name: 'firefox',
+    //  use: { ...devices['Desktop Firefox'] },
+    //},
+    //{
+    //  name: 'webkit',
+    //  use: { ...devices['Desktop Safari'] },
+    //},
   ],
 });
