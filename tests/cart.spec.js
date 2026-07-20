@@ -2,7 +2,7 @@
 const { test, expect } = require('@playwright/test');
 //const { LoginPage } = require('../pages/LoginPage');
 //const { InventoryPage } = require('../pages/InventoryPage');
-const{ LoginFlow } = require('../workflow/loginFlow');
+const{ LoginFlow } = require('../workflow/loginflow');
 const users = require('../utils/users');
 
 test.describe('Carrinho de compras', () => {

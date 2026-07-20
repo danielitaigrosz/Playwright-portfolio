@@ -10,6 +10,9 @@ para mudar o nome da branch em que estou no momento
 Comentários `// TODO: ...` funcionam como lembretes visíveis no código.
 Antes de commitar, revisar com `git status` e `git diff` o que realmente será enviado.
 ---
+Verificar o nome de verdade do arquivo
+git ls-files | grep -i loginflow
+---
 git init
 inicia o repositório da pasta em questão, cria os arquivos git
 ---
