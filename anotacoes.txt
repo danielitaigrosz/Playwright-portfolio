@@ -35,12 +35,22 @@ remover arquivo
 git rm "nome do arquivo"
 ---
 CRIANDO BRANCH
-git checkout -b feature/nome-da-feature   → cria E muda pra uma branch nova
 git branch                                → lista as branches, mostrando em qual você está
+git checkout -b nomedabranch              → cria E muda pra a branch nova
 git checkout main                         → volta pra branch main
+git checkout nomedabranch                 → muda para a branch nova
 git merge feature/nome-da-feature         → traz as mudanças da branch pra dentro da main
 - Convenções comuns de nome: `feature/` (funcionalidade nova), `fix/` (correção), `core/` (manutenção).
+
+OBSERVAÇÃO: para mudar de branch, deve-se salvar os arquivos e fazer o commit antes
 ---
+Esse comando mostra o nome exato dos arquivos como o Git os enxerga (não como o Windows mostra na tela):
+git ls-files | grep -i checkoutflow
+---
+Ver o teste rodar na tela
+npx playwright test nomedoarquivo.js --headed
+---
+
 ---------------------------------
 
 
