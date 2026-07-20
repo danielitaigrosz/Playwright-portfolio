@@ -1,10 +1,17 @@
 # 🎭 Playwright Automation Portfolio
 
+## 🙋 Sobre mim
+
+Meu nome é Daniel Itai Grosz, e estou estudando automação de testes com Playwright. Esse é um dos meus projetos de portfólio!
+
+- 💼 [LinkedIn] -> https://www.linkedin.com/in/daniel-itai-grosz/
+- 🐙 [GitHub](https://github.com/danielitaigrosz)
+- ✉️ [Email] daniel.itaigrosz@gmail.com
+
 ![Playwright Tests](https://github.com/danielitaigrosz/playwright-portfolio/actions/workflows/playwright.yml/badge.svg)
 
 Projeto de automação de testes E2E (end-to-end) construído com **Playwright + JavaScript**, utilizando o padrão **Page Object Model (POM)**. Criado como portfólio de estudos em QA/automação, aplicado sobre o site de testes público [SauceDemo](https://www.saucedemo.com/).
 
-## 🧰 Tecnologias
 
 - [Playwright](https://playwright.dev/) — framework de automação de testes E2E
 - JavaScript (Node.js)
@@ -45,26 +52,7 @@ playwright-portfolio/
 - **Checkout**
   - Fluxo completo de compra (login → adicionar produto → checkout → confirmação)
 
-## ▶️ Como rodar o projeto localmente
-
-Pré-requisitos: [Node.js](https://nodejs.org/) instalado (versão 18 ou superior).
-
-```bash
-# 1. Clone o repositório
-git clone https://github.com/SEU-USUARIO/playwright-portfolio.git
-cd playwright-portfolio
-
-# 2. Instale as dependências
-npm install
-
-# 3. Instale os navegadores usados pelo Playwright
-npx playwright install
-
-# 4. Rode os testes
-npm test
-```
-
-### Outros comandos úteis
+### Comandos úteis
 
 ```bash
 # Rodar com o navegador visível (modo headed)
@@ -83,25 +71,14 @@ npm run test:debug
 npm run report
 ```
 
-## 🔄 Integração Contínua (CI)
-
-Este projeto conta com um workflow do **GitHub Actions** (`.github/workflows/playwright.yml`) que roda automaticamente todos os testes a cada `push` ou `pull request` na branch `main`, publicando o relatório do Playwright como artefato do build.
-
 ## 📌 Sobre o site de testes
 
-Os testes utilizam o [SauceDemo](https://www.saucedemo.com/), um site oficialmente mantido para prática de automação de testes, com usuários de teste pré-definidos (ex: `standard_user`, `locked_out_user`, `problem_user`), todos com a senha `secret_sauce`.
+Utilizarei alguns sites mas principalmente o [SauceDemo](https://www.saucedemo.com/) - para prática de automação de testes, e usuários de teste pré-definidos (ex: `standard_user`, `locked_out_user`, `problem_user`), todos com a senha `secret_sauce`.
 
 ## 🙋 Sobre este projeto
 
-Este repositório foi criado como parte dos meus estudos em automação de testes com Playwright. Sinta-se à vontade para explorar, sugerir melhorias ou usar como referência para seus próprios estudos.
-
-## 🙋 Sobre mim
-
-Meu nome é Daniel Itai Grosz, e estou estudando automação de testes com Playwright. Esse é um dos meus projetos de portfólio!
-
-- 💼 [LinkedIn] -> https://www.linkedin.com/in/daniel-itai-grosz/
-- 🐙 [GitHub](https://github.com/danielitaigrosz)
-- ✉️ [Email] daniel.itaigrosz@gmail.com
+Este repositório foi criado com o objetivo de mostrar parte dos meus estudos em automação de testes com Playwright.
+Sinta-se à vontade para explorar, e sugerir melhorias.
 
 ---
 Feito com 🎭 Playwright + JavaScript
