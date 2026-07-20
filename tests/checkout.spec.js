@@ -1,11 +1,11 @@
 // tests/checkout.spec.js ATUALIZADO
 const { test, expect } = require('@playwright/test');
-const { CheckoutFlow } = require('../workflow/CheckoutFlow');
+const { CheckoutFlow } = require('../workflow/checkoutflow');
 const users = require('../utils/users');
 
 test.describe('Fluxo de checkout', () => {
   test('deve concluir uma compra do início ao fim', async ({ page }) => {
-    const checkoutFlow = new CheckoutFlow(page);
+    const checkoutFlow = new checkoutflow(page);
 
     // Passo composto: login + adicionar produto + ir pro carrinho + iniciar checkout
     await checkoutFlow.comprarProduto(
