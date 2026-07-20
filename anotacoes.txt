@@ -4,12 +4,6 @@ git branch -M main                           → garante que a branch principal 
 git push -u origin main                      → primeiro envio, "apresentando" a conexão
 
 LISTA DE COMANDOS ------------------------
-<<<<<<< HEAD
-=======
-Pra limpar a tela do terminal só digitar
-clear
----
->>>>>>> feature/login-flow
 git branch -m "nome correto"
 para mudar o nome da branch em que estou no momento
 ---
