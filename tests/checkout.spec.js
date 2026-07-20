@@ -1,6 +1,6 @@
 // tests/checkout.spec.js ATUALIZADO
 const { test, expect } = require('@playwright/test');
-const { CheckoutFlow } = require('../workflow/checkoutflow');
+const { CheckoutFlow } = require('../workflow/checkoutFlow');
 const users = require('../utils/users');
 
 test.describe('Fluxo de checkout', () => {
