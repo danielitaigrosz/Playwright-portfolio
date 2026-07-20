@@ -1,0 +1,62 @@
+git init                                     → transforma a pasta num repositório Git
+git remote add origin <url-do-repositorio>   → conecta a pasta local ao repositório no GitHub
+git branch -M main                           → garante que a branch principal se chama "main"
+git push -u origin main                      → primeiro envio, "apresentando" a conexão
+
+LISTA DE COMANDOS ------------------------
+git branch -m "nome correto"
+para mudar o nome da branch em que estou no momento
+---
+Comentários `// TODO: ...` funcionam como lembretes visíveis no código.
+Antes de commitar, revisar com `git status` e `git diff` o que realmente será enviado.
+---
+git init
+inicia o repositório da pasta em questão, cria os arquivos git
+---
+git - la
+permite ver os arquivos ocultos
+---
+para adicionar arquivos:
+git add "nome do arquivo" = adiciona cada arquivo individualmente
+git add --all = adiciona todos os arquivos
+git add -A = 
+git add . = adiciona o arquivo que está aberto
+---
+git status
+permite ver os status dos arquivos que foram passados e em que condição se encontram
+---
+git commit -m "mensagem"
+ao fazer o commit adiciono uma mensagem para identificar ele
+---
+para restaurar arquivo do ambiente de staging
+git restore "nome do arquivo"
+---
+remover arquivo
+git rm "nome do arquivo"
+---
+CRIANDO BRANCH
+git checkout -b feature/nome-da-feature   → cria E muda pra uma branch nova
+git branch                                → lista as branches, mostrando em qual você está
+git checkout main                         → volta pra branch main
+git merge feature/nome-da-feature         → traz as mudanças da branch pra dentro da main
+- Convenções comuns de nome: `feature/` (funcionalidade nova), `fix/` (correção), `core/` (manutenção).
+---
+---------------------------------
+
+
+| `npm install` | Baixa e guarda pacotes no projeto (lidos do `package.json`), na pasta `node_modules` | Comprar peças e guardar na caixa de ferramentas |
+| `npx playwright install` | Executa/baixa algo pontualmente (nesse caso, os navegadores reais) | Alugar uma ferramenta só pra usar uma vez |
+
+- **Page Object Model (POM)**: cada página do site tem sua classe própria, guardando seletores e ações básicas. Se um seletor mudar, corrige em um lugar só.
+- **Workflow/Steps**: camada opcional que combina ações de várias páginas em um "passo composto" reutilizável — só vale a pena criar quando uma sequência se repete bastante entre testes.
+
+- `require('../pages/LoginPage')` → "importa" o conteúdo de outro arquivo pra dentro do arquivo atual.
+- `module.exports = { LoginPage }` → "exporta" (libera pra fora) o que pode ser usado por quem importar aquele arquivo.
+- `../` no caminho significa "sobe uma pasta"; sem `../`, o Node procura em pacotes instalados (`node_modules`).
+
+1. `git status` → mostra o que mudou (vermelho = não adicionado, verde = já adicionado).
+2. `git add .` → adiciona todas as mudanças da pasta atual pra baixo.
+3. `git commit -m "mensagem"` → salva (tira uma "foto") dessa versão localmente.
+4. `git push` → envia essas mudanças pro GitHub.
+- `git diff nome-do-arquivo` → mostra linha por linha o que mudou num arquivo específico, antes de dar `add`.
+
