@@ -5,7 +5,7 @@ const users = require('../utils/users');
 
 test.describe('Fluxo de checkout', () => {
   test('deve concluir uma compra do início ao fim', async ({ page }) => {
-    const checkoutFlow = new checkoutflow(page);
+    const checkoutFlow = new CheckoutFlow(page);
 
     // Passo composto: login + adicionar produto + ir pro carrinho + iniciar checkout
     await checkoutFlow.comprarProduto(
